@@ -1,13 +1,13 @@
 console.log('hi');
 
-let leftMove= (width) => {
+let topMove= (height) => {
   let temp = 0;
-  let leftMoving = setInterval(()=>{
-    if(temp > -width) {
-      temp = temp -7;
-      slideUl.style.left = temp+"px";
+  let topMoving = setInterval(()=>{
+    if(temp > -height) {
+      temp = temp -5;
+      slideUl.style.top = temp+"px";
     } else {
-      clearInterval(leftMoving)
+      clearInterval(topMoving)
     }
   }, 0.5)
 }
@@ -16,16 +16,16 @@ let leftMove= (width) => {
 let appnedSomething = ()=>{
   let remove1st = slideUl.removeChild(slideUl.children[0]);
   slideUl.appendChild(remove1st);
-  slideUl.style.left = 0;
+  slideUl.style.top = 0;
 }
 
-// 최종 조립
-// setTimeout(()=>{
-//   // 시작 전 타임아웃
-//     setInterval(()=>{
-//       leftMove(700);
-//       setTimeout(()=>{
-//         appnedSomething();
-//       },1000);
-//     }, 5000)
-//   },5000)
+//최종 조립
+setTimeout(()=>{
+  // 시작 전 타임아웃
+    setInterval(()=>{
+      topMove(400);
+      setTimeout(()=>{
+        appnedSomething();
+      },500);
+    }, 5000)
+  },5000)
