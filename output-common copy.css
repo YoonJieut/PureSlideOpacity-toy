@@ -25,19 +25,18 @@ li {
 #root #window #slideUl {
   height: 400px;
   outline: 1px solid red;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 #root #window #slideUl li {
   width: 800px;
   height: 400px;
   outline: 1px solid black;
   text-align: center;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 #root #window #slideUl #items1 {
   background-color: aqua;
-  z-index: 1;
 }
 #root #window #slideUl #items2 {
   background-color: red;
