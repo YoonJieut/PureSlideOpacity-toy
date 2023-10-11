@@ -12,5 +12,29 @@ li {
   height: 100vh;
   background-color: #ccc;
 
-  
+  #window{
+    width: 800px;
+    height: 400px;
+    outline: 1px solid black;
+
+    #slideUl {
+      height: 400px;
+      outline: 1px solid red;
+      
+      & li {
+        outline: 1px solid black;
+        text-align: center;
+      }
+
+      #items1{
+        background-color: aqua;
+      }
+      #items2{
+        background-color: red;
+      }
+      #items3{
+        background-color: cadetblue;
+      }
+    }
+  }
 }

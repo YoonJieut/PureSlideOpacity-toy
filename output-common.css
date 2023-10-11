@@ -13,5 +13,27 @@ li {
   height: 100vh;
   background-color: #ccc;
 }
+#root #window {
+  width: 800px;
+  height: 400px;
+  outline: 1px solid black;
+}
+#root #window #slideUl {
+  height: 400px;
+  outline: 1px solid red;
+}
+#root #window #slideUl li {
+  outline: 1px solid black;
+  text-align: center;
+}
+#root #window #slideUl #items1 {
+  background-color: aqua;
+}
+#root #window #slideUl #items2 {
+  background-color: red;
+}
+#root #window #slideUl #items3 {
+  background-color: cadetblue;
+}
 
 /*# sourceMappingURL=output-common.css.map */
