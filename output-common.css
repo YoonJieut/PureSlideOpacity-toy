@@ -25,7 +25,6 @@ li {
 #root #window #slideUl {
   height: 400px;
   outline: 1px solid red;
-  display: flex;
   position: absolute;
   left: 0;
   top: 0;
