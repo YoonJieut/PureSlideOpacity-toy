@@ -12,17 +12,27 @@ li {
   width: 100vw;
   height: 100vh;
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root #window {
   width: 800px;
   height: 400px;
   outline: 1px solid black;
+  position: relative;
 }
 #root #window #slideUl {
   height: 400px;
   outline: 1px solid red;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 #root #window #slideUl li {
+  width: 800px;
+  height: 400px;
   outline: 1px solid black;
   text-align: center;
 }

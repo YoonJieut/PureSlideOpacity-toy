@@ -11,17 +11,27 @@ li {
   width: 100vw;
   height: 100vh;
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   #window{
     width: 800px;
     height: 400px;
     outline: 1px solid black;
+    position : relative;
 
     #slideUl {
       height: 400px;
       outline: 1px solid red;
+      display: flex;
+      position : absolute;
+      left: 0;
+      top: 0;
       
       & li {
+        width: 800px;
+        height: 400px;
         outline: 1px solid black;
         text-align: center;
       }
